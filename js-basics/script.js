@@ -25,3 +25,25 @@ console.log(arr);
 
 var is5there = arr.indexOf(6) === -1 ? 'not there': 'there';
 console.log(is5there);
+
+/* Object Literal */
+var john = {
+    firstName: 'Muthu',
+    lastName: 'Venkat',
+    yob: 1991,
+    family: ['Aarabhi', 'Athira'],
+    calcAge: function() {
+        this.age =  new Date().getFullYear() - this.yob;
+    }
+}
+
+console.log(john.family);
+console.log(JSON.stringify(john));
+console.log(john['lastName']);
+
+/* New Object method */
+var jane = new Object();
+
+john.calcAge();
+console.log(john);
+
